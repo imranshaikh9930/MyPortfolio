@@ -91,11 +91,14 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-        <li className='py-6 text-2xl'>
+        <li className='py-6 text-2xl bg-pink-500 p-4 rounded-full'>
           {' '}
-          <Link onClick={handleClick} to='contact' className='bg-pink-500 p-4 rounded-full' smooth={true} duration={500}>
-           <a href="https://drive.google.com/file/d/1GH1prMxyFHjBmrRattxq_b_nCb4p0uFz/view?usp=drive_link">Resume</a>
-          </Link>
+          <a href="https://drive.google.com/file/d/1GH1prMxyFHjBmrRattxq_b_nCb4p0uFz/view?usp=drive_link">
+          {/* <Link onClick={handleClick} to='#' className='bg-pink-500 p-4 rounded-full' smooth={true} duration={500}> */}
+            Resume
+          {/* </Link> */}
+          </a>
+           
         </li>
       </ul>
 

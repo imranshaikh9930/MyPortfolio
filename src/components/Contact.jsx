@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import{ useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 const Contact = (e) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,23 +20,32 @@ const Contact = (e) => {
       to_name: "Imran",
       message: message,
     };
-    emailjs
+    if(name && email && message){
+      emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((res) => {
         console.log("Email sent Successfully", res);
+        toast.success("Email sent Successfully")
         setName("");
         setEmail("");
         setMessage("");
       })
       .catch((e) => {
         console.error("Error sending email, please try again later.", e);
+        toast.error("Error sending email",e)
       });
+    }
+    else{
+      toast.error("Please fill all fields");
+    }
+    
   };
   return (
     <div
       name="contact"
       className="w-full h-auto bg-[#0a192f] flex justify-center items-center p-4"
     >
+      <ToastContainer/>
       <form
         action=""
         onSubmit={handleSubmit}
