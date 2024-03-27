@@ -45,7 +45,9 @@ const Contact = (e) => {
       name="contact"
       className="w-full h-auto bg-[#0a192f] flex justify-center items-center p-4"
     >
-      <ToastContainer/>
+      <ToastContainer
+      position="bottom-right"
+      />
       <form
         action=""
         onSubmit={handleSubmit}
