@@ -24,8 +24,8 @@ const Contact = (e) => {
       emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((res) => {
-        console.log("Email sent Successfully", res);
-        toast.success("Email sent Successfully")
+        // console.log("Email sent Successfully", res);
+        toast.success("Email sent Successfully",res)
         setName("");
         setEmail("");
         setMessage("");
