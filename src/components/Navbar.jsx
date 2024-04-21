@@ -93,7 +93,7 @@ const Navbar = () => {
         </li>
         <li className='py-6 text-2xl bg-pink-500 p-4 rounded-full'>
           {' '}
-          <a href="https://drive.google.com/file/d/1GH1prMxyFHjBmrRattxq_b_nCb4p0uFz/view?usp=drive_link">
+          <a href="https://drive.google.com/file/d/1C2gwU7jG4qPifVf5ZuJaV74iCtf60xDL/view?usp=drive_link">
           {/* <Link onClick={handleClick} to='#' className='bg-pink-500 p-4 rounded-full' smooth={true} duration={500}> */}
             Resume
           {/* </Link> */}
