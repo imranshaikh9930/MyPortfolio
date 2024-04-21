@@ -1,29 +1,35 @@
-import React from 'react';
-
 const About = () => {
   return (
-    <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
-      <div className='flex flex-col justify-center items-center w-full h-full mt-[-7rem] sm:mt-[-8rem]'>
-        <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
-          <div className='sm:text-right pb-8 pl-4'>
-            <p className='text-2xl font-bold inline border-b-4 border-pink-600 sm:text-4xl'>
+    <div name="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
+      <div className="flex flex-col justify-center items-center w-full h-full mt-[-12rem] sm:mt-[-8rem]">
+        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mt-[12rem] md:mt-0">
+          <div className="sm:text-right pb-8 pl-4">
+            <p className="text-2xl font-bold inline border-b-4 border-pink-600 sm:text-4xl">
               About
             </p>
           </div>
           <div></div>
+        </div>
+        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+          <div className="sm:text-left text-2xl font-bold sm:text-3xl">
+            <p>
+            Hello! I'm Imran, delighted to make your acquaintance. Welcome to my corner of the web. Feel free to explore and discover more about me.
+            </p>
           </div>
-          <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-            <div className='sm:text-right text-2xl font-bold sm:text-4xl'>
-              <p>Hi. I'm Imran Shaikh, nice to meet you. Please take a look around.</p>
-            </div>
-            <div>
-              <p>I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?</p>  
-            </div>
+          <div>
+            <p>
+              Hi Everyone, I am Imran shaikh from Aurangabad, India.  I have
+              completed <span className="text-md font-bold text-pink-500">Bachelor Of Technology Degree</span>  from <span className="text-md font-bold text-pink-500">Chh.Shahu College Of Engineering.</span> 
+              
+              {/* <ul className="mt-2 sm:mt-[1rem] text-pink-500 list-disc ml-4 font-bold">
+                <li>Playing Games</li>
+                <li>Listening Music</li>
+                <li>Watching Movies</li>
+              </ul> */}
+            </p>
+            
           </div>
+        </div>
       </div>
     </div>
   );

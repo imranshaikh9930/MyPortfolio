@@ -53,7 +53,7 @@ const Contact = (e) => {
         onSubmit={handleSubmit}
         className="flex flex-col max-w-[600px] w-full h-100"
       >
-        <div className="pb-8 mt-[2rem]">
+        <div className="pb-8 mt-[4rem]">
           <p className="text-2xl font-bold inline border-b-4 border-pink-600 text-gray-300 sm:text-4xl">
             Contact
           </p>
