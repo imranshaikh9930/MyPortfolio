@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
@@ -9,6 +10,13 @@ import Work from "./components/Work";
 
 
 function App() {
+  useEffect(() => {
+    let htmlClasses = document.querySelector("html").classList;
+    if (localStorage.theme === "dark") {
+      htmlClasses.add("dark");
+    }
+  }, []);
+
   return (
     <div className="select-none">
    

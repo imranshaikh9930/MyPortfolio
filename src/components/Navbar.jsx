@@ -3,13 +3,27 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
+import Togglebutton from "./Togglebutton";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  // const {theme,toggleTheme} = useTheme();
+
+  const toggleMethod = ()=>{
+    let htmlEle = document.querySelector("html").classList;
+    if(localStorage.theme === 'dark'){
+      htmlEle.remove("dark");
+      localStorage.removeItem("theme");
+    }
+    else{
+      htmlEle.add("dark");
+      localStorage.setItem("theme","dark");
+    }
+  }
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4  bg-[#fff] dark:bg-[#0a192f] text-black dark:text-gray-300">
       <div>
         <h1 className="font-bold text-3xl text-pink-600 text-w font-Nav">
           Imran.dev
@@ -17,7 +31,11 @@ const Navbar = () => {
       </div>
 
       {/* menu */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex md:items-center">
+      <li className="flex items-center">
+        
+        <Togglebutton onClick ={toggleMethod}/>
+        </li>
         <li className="hover:bg-dark hover:duration-300  hover:text-gray-500  link">
           <Link to="home" smooth={true} duration={500}>
             Home
@@ -43,6 +61,7 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+       
       </ul>
 
       {/* Hamburger */}
@@ -55,7 +74,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#fff] dark:bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-2xl ">
