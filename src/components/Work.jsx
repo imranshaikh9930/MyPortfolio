@@ -19,9 +19,8 @@ const Work = () => {
         </div>
 
         {/* container for projects */}
-    
 
-<div className="grid mx-auto sm:grid-cols-2 md:grid-cols-3 gap-6 cursor-pointer ">
+        <div className="grid mx-auto sm:grid-cols-2 md:grid-cols-3 gap-6 cursor-pointer ">
           {/* Gird Item */}
           {project.map((project) => (
             <div
@@ -30,34 +29,33 @@ const Work = () => {
             >
               <div className="preserve-3d group-hover:my-rotate-y-180 relative h-full w-full duration-1000">
                 <div className="backface-hidden absolute h-full w-full border-2 rounded-sm">
-                  <img
-                    src={project.image}
-                    className="h-full w-full"
-                  />
+                  <img src={project.image} className="h-full w-full" />
                 </div>
                 <div className="my-rotate-y-180 backface-hidden absolute h-full w-full overflow-hidden bg-gray-400 rounded-lg">
                   <div className="flex h-full flex-col items-center justify-center px-2 pb-24 text-center text-gray-800 ">
                     <h1 className="text-3xl font-semibold">{project.name}</h1>
-        
-                  
-                    <a href={project.live} className="flex justify-center items-center">
 
-                    <button className="absolute -bottom-20 scale-0 rounded-full bg-teal-500 px-6 py-2 font-semibold text-white delay-500 duration-1000 group-hover:bottom-20 group-hover:scale-125">
-                      Live
-                    </button>
+                    <a
+                      href={project.live}
+                      className="flex justify-center items-center"
+                    >
+                      <button className="absolute -bottom-20 scale-0 rounded-full bg-teal-500 px-6 py-2 font-semibold text-white delay-500 duration-1000 group-hover:bottom-20 group-hover:scale-125">
+                        Live
+                      </button>
                     </a>
-                    <a href={project.github} className="flex justify-center items-center">
-
-                    <button className="absolute -bottom-20 scale-0 rounded-full bg-teal-500 px-6 py-2 font-semibold text-white delay-500 duration-1000 group-hover:bottom-36 group-hover:scale-125">
-                      Code
-                    </button>
+                    <a
+                      href={project.github}
+                      className="flex justify-center items-center"
+                    >
+                      <button className="absolute -bottom-20 scale-0 rounded-full bg-teal-500 px-6 py-2 font-semibold text-white delay-500 duration-1000 group-hover:bottom-36 group-hover:scale-125">
+                        Code
+                      </button>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           ))}
-          
         </div>
       </div>
     </div>
