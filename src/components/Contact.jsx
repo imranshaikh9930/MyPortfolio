@@ -43,7 +43,7 @@ const Contact = (e) => {
   return (
     <div
       name="contact"
-      className="w-full h-auto bg-[#fff] dark:bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full h-auto bg-[#fff] dark:bg-[#2C3E50] flex justify-center items-center p-4"
     >
       <ToastContainer
       position="bottom-right"
@@ -82,7 +82,7 @@ const Contact = (e) => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
-        <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
+        <button className="text-black dark:text-white border border-gray-400  dark:border-2 hover:bg-gray-400 hover:border-gray-400  dark:hover:bg-pink-600 dark:hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
           Let's Collaborate
         </button>
       </form>

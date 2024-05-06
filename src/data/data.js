@@ -6,7 +6,7 @@ import Imdb from "../assets/projects/Imdb.jpg";
 export const data=[
     {
         id:1,
-        name:"Podcast",
+        name:"Podcastify",
         image:Podcast,
         github:"https://github.com/imranshaikh9930/React-Podcast",
         live:"https://react-podcast-delta.vercel.app/",

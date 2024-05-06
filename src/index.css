@@ -32,28 +32,30 @@
 
 }
 .link {
-    position: relative;
-    transition: all .2s ease; 
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
 .link::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; 
-    height: 2px;
-   
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  height: 2px;
+  background-color: transparent; 
+  transition: all 0.3s ease;
+  transform: scale(0,1);
+  transform-origin: 0% 100%;
+  
 }
 
 .link:hover::after {
-    background-color:#db2775;
-  
+  transform: scale(1,1);
+  background-color:#db2775; 
+}
 
-}
-html{
-    transition: all 0.3s ease-in-out;
-}
+
   .switch {
     position: relative;
     display: inline-block;
