@@ -43,7 +43,7 @@ const Contact = (e) => {
   return (
     <div
       name="contact"
-      className="w-full h-auto bg-[#fff] dark:bg-[#2C3E50] flex justify-center items-center p-4"
+      className="w-full h-auto bg-[#fff] dark:bg-[#0a192f] flex justify-center items-center p-4"
     >
       <ToastContainer
       position="bottom-right"

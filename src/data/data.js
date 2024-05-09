@@ -3,6 +3,7 @@ import RealEst from '../assets/projects/realestate.jpg'
 import Podcast from "../assets/projects/Podcast.jpg"
 import Amazon from "../assets/projects/amazon.jpg"
 import Imdb from "../assets/projects/Imdb.jpg";
+import MyShop from "../assets/projects/MyShop.jpg"
 export const data=[
     {
         id:1,
@@ -25,13 +26,13 @@ export const data=[
         github:"https://github.com/imranshaikh9930/imdb_clone",
         live:"https://imdb-clone-nine-inky.vercel.app/",
     },
-    // {
-    //     id:4,
-    //     name:"React JS Application",
-    //     image:RealEst,
-    //     github:"",
-    //     live:"",
-    // },
+    {
+        id:4,
+        name:"My Shop",
+        image:MyShop,
+        github:"https://github.com/imranshaikh9930/MyShop",
+        live:"https://my-shop-six-chi.vercel.app/",
+    },
 
 
 ]
