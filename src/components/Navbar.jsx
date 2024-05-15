@@ -12,19 +12,19 @@ const Navbar = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   // const {theme,toggleTheme} = useTheme();
 
-  const toggleMethod = () => {
-    const htmlEle = document.querySelector("html").classList;
+//   const toggleMethod = () => {
+//     const htmlEle = document.querySelector("html").classList;
 
-    if (localStorage.theme === 'dark') {
-        htmlEle.remove("dark");
-        localStorage.removeItem("theme");
-        setIsDarkTheme(false); // Update state after removing dark theme
-    } else {
-        htmlEle.add("dark");
-        localStorage.setItem("theme", "dark");
-        setIsDarkTheme(true); // Update state after adding dark theme
-    }
-}
+//     if (localStorage.theme === 'dark') {
+//         htmlEle.remove("dark");
+//         localStorage.removeItem("theme");
+//         setIsDarkTheme(false); // Update state after removing dark theme
+//     } else {
+//         htmlEle.add("dark");
+//         localStorage.setItem("theme", "dark");
+//         setIsDarkTheme(true); // Update state after adding dark theme
+//     }
+// }
 
 
 
@@ -40,7 +40,7 @@ const Navbar = () => {
       <ul className="hidden md:flex md:items-center">
       <li className="flex items-center">
         
-        <Togglebutton onClick ={toggleMethod}/>
+        {/* <Togglebutton onClick ={toggleMethod}/> */}
        
         </li>
         <li className="hover:bg-dark hover:duration-300  hover:text-gray-500  link">
@@ -59,8 +59,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="hover:bg-dark duration-300 hover:text-gray-500 link">
-          <Link to="work" smooth={true} duration={500}>
-            Work
+          <Link to="project" smooth={true} duration={500}>
+            Projects
           </Link>
         </li>
         <li className="hover:bg-dark duration-300 hover:text-gray-500 link ">
@@ -103,8 +103,8 @@ const Navbar = () => {
         </li>
         <li className="py-6 text-2xl">
           {" "}
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
+          <Link onClick={handleClick} to="project" smooth={true} duration={500}>
+            Projects
           </Link>
         </li>
         <li className="py-6 text-2xl">
