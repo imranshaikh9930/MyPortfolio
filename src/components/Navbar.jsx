@@ -10,26 +10,12 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
-  // const {theme,toggleTheme} = useTheme();
-
-//   const toggleMethod = () => {
-//     const htmlEle = document.querySelector("html").classList;
-
-//     if (localStorage.theme === 'dark') {
-//         htmlEle.remove("dark");
-//         localStorage.removeItem("theme");
-//         setIsDarkTheme(false); // Update state after removing dark theme
-//     } else {
-//         htmlEle.add("dark");
-//         localStorage.setItem("theme", "dark");
-//         setIsDarkTheme(true); // Update state after adding dark theme
-//     }
-// }
+  
 
 
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4  bg-[#fff] dark:bg-[#0a192f] text-black dark:text-gray-300 z-[100]">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-[100]">
       <div>
         <h1 className="font-bold text-3xl text-pink-600 text-w font-Nav">
           Imran.dev
