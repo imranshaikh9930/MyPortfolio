@@ -51,6 +51,8 @@ const Contact = (e) => {
       <form
         action=""
         onSubmit={handleSubmit}
+         data-aos="zoom-in-up"
+        data-aos-duration="1000"
         className="flex flex-col max-w-[600px] w-full h-100"
       >
         <div className="pb-8 mt-[4rem]">

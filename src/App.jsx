@@ -5,20 +5,20 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
+import Aos from "aos";
+import "aos/dist/aos.css"
 // import AnimatedCursor from "react-animated-cursor"
 
 
 
 function App() {
   useEffect(() => {
-    let htmlClasses = document.querySelector("html").classList;
-    if (localStorage.theme === "dark") {
-      htmlClasses.add("dark");
-    }
-  }, []);
+    Aos.init();
+    
+   }, [])
 
   return (
-    <div className="select-none">
+    <div className="select-none" data-aos-once="true">
    
       <Navbar />
       <Home />
