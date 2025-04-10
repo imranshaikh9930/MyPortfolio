@@ -48,7 +48,7 @@ import Etutor from "../assets/projects/e-tutor.jpg";
         name:"Quiz-App",
         image:QuizApp,
         github:"https://github.com/imranshaikh9930/React-Quiz",
-        live:"https://my-shop-six-chi.vercel.app/",
+        live:"https://react-quiz-do4u.vercel.app/",
     },
     {
         id:7,
