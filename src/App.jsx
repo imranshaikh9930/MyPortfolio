@@ -18,7 +18,7 @@ function App() {
    }, [])
 
   return (
-    <div className="select-none" data-aos-once="true">
+    <div className="select-none bg-[#0a192f]" data-aos-once="true">
    
       <Navbar />
       <Home />

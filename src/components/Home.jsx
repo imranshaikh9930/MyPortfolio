@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import {Link} from "react-scroll"
 const Home = () => {
   return (
-    <div name='home' className='w-full h-screen   bg-[#0a192f]'>
+    <div name='home' className='w-full h-screen'>
       {/* Container */}
       
       <div   data-aos="fade-up-right" data-aos-duration="1000"  className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
@@ -15,7 +15,7 @@ const Home = () => {
         </h1>
         <h2 className='text-2xl sm:text-5xl font-bold text-[#ccd6f6] font-Hero'>
           I'm a  <Typewriter
-            words={['FrontEnd Developer', 'React-Developer']}
+            words={['FrontEnd Developer', 'React-Developer','MERN Stack Developer']}
             loop={Infinity}
             cursor
             cursorStyle='_'
@@ -28,7 +28,7 @@ const Home = () => {
           />
         </h2>
         <p className='text-[#ccd6f6] py-4 max-w-[700px]'>
-          I’m a FrontEnd developer specializing in building and occasionally
+          I’m a Full Stack Developer specializing in building and occasionally
           designing exceptional digital experiences. Currently, I’m focused on
           building responsive full-stack web applications.
           

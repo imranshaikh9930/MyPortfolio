@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin')
-
+// const plugin = require('tailwindcss/plugin')
+import plugin from "tailwindcss/plugin";
 const Myclass = plugin(function ({ addUtilities }) {
   addUtilities({
     ".my-rotate-y-180": {
