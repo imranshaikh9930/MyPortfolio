@@ -15,15 +15,19 @@ const Navbar = () => {
 
 6
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-[100]">
-      <div>
-        <h1 className="font-bold text-3xl text-pink-600 text-w font-Nav">
+    <div  className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-[100]">
+      <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <h1 className="font-[800] text-4xl text-pink-600 text-w font-Nav">
           Imran.dev
         </h1>
       </div>
 
       {/* menu */}
-      <ul className="hidden md:flex md:items-center">
+      <ul className="hidden md:flex md:items-center" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
       <li className="flex items-center">
         
         {/* <Togglebutton onClick ={toggleMethod}/> */}
@@ -101,7 +105,7 @@ const Navbar = () => {
         </li>
         <li className="py-6 text-2xl bg-pink-500 p-4 rounded-full">
           {" "}
-          <a href="https://drive.google.com/file/d/17mhqDC5B24wliUHyfPqW2by7uEGjq7j5/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1JTTECU2X4klER-AUwAW2bPIaP75b19Ty/view?usp=sharing">
             {/* <Link onClick={handleClick} to='#' className='bg-pink-500 p-4 rounded-full' smooth={true} duration={500}> */}
             Resume
             {/* </Link> */}
@@ -139,7 +143,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://drive.google.com/file/d/17mhqDC5B24wliUHyfPqW2by7uEGjq7j5/view?usp=sharing"
+              href="https://drive.google.com/file/d/1JTTECU2X4klER-AUwAW2bPIaP75b19Ty/view?usp=sharing"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

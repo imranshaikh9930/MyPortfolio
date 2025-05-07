@@ -9,7 +9,7 @@ const Work = () => {
   const displayProjects = project.slice(0, visibleCount);
 
   const handleLoadMore = () => {
-    console.log("click")
+    // console.log("click")
     setLoading(true);
     setTimeout(() => {
       setVisibleCount((prevCount) => prevCount + 4);
@@ -21,7 +21,7 @@ const Work = () => {
     <>
       <div
         name="project"
-        className="w-full md:h-screen text-gray-300 "
+        className="w-full md:h-screen text-gray-300  md:mt-5"
       >
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
           <div className="pb-8 mt-[26rem] sm:mt-[5rem] md:mt-[9rem]">

@@ -7,7 +7,7 @@
 
 @layer base {
     body {
-        @apply font-[Raleway];
+        @apply font-[Inter];
     }
     li {
         @apply px-4;
