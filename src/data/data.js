@@ -40,8 +40,8 @@ import Etutor from "../assets/projects/e-tutor.jpg";
         id:5,
         name:"MERN Auth",
         image:MernAuth,
-        github:"https://github.com/imranshaikh9930/MyShop",
-        live:"https://mern-auth-3xba.vercel.app/register",
+        github:"https://github.com/imranshaikh9930/Mern_Auth",
+        live:"https://mern-auth-frontend-wwmy.onrender.com/register",
     },
     {
         id:6,
